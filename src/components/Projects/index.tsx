@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { PorpsProject } from '../../helpers/interfaces';
+import { Pagination } from '../Pagination';
 
 export default function Projects({ data }: PorpsProject) {
   return (
@@ -12,11 +13,10 @@ export default function Projects({ data }: PorpsProject) {
         </div>
         <div className="border-b-2 border-gray-50 w-52 my-4"></div>
       </div>
-      <div
-        className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 mt-7
-       gap-y-20 gap-x-8 lg:w-[90%] xl:w-8/12 m-auto"
-      >
-        {data.map((item) => (
+      <div>
+        <Pagination items={data} />
+      </div>
+      {/* {data.map((item) => (
           <div key={item.id} className="h-72 max-w-md m-auto">
             <Image
               src={item.imageProject.url}
@@ -33,8 +33,7 @@ export default function Projects({ data }: PorpsProject) {
               </p>
             </Link>
           </div>
-        ))}
-      </div>
+        ))} */}
     </section>
   );
 }
