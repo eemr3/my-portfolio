@@ -17,10 +17,14 @@ export default function ActionLink({ urlProject, title, description }: ActionLin
         </p>
         <footer className="py-3 px-2 w-[390px] lg:w-auto flex justify-around">
           <Link href={urlProject} target="_blank">
-            <p className="text-gray-100 text-base">
-              <span className="text-orange-400">&lt;</span>
+            <p className="text-gray-800 dark:text-gray-100 text-base">
+              <span className="text-green-500 font-bold dark:font-normal dark:text-orange-400">
+                &lt;
+              </span>
               Acessar
-              <span className="text-orange-400">&#47;&gt;</span>
+              <span className="text-green-500 font-bold dark:text-orange-400 dark:font-normal">
+                &#47;&gt;
+              </span>
             </p>
           </Link>
         </footer>
