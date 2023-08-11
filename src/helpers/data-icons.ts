@@ -1,0 +1,92 @@
+export const dataIcons = [
+  {
+    id: 1,
+    title: 'HTML',
+    icon: '/icons/html5-original.svg',
+    alt: 'Imagem Logo HTML5',
+  },
+  {
+    id: 2,
+    title: 'CSS',
+    icon: '/icons/css3-original.svg',
+    alt: 'Imagem Logo CSS',
+  },
+  {
+    id: 3,
+    title: 'Tailwindcss',
+    icon: '/icons/tailwind.svg',
+    alt: 'Imagem Logo Tailwindcss',
+  },
+  {
+    id: 4,
+    title: 'Javascript',
+    icon: '/icons/javascript-original.svg',
+    alt: 'Imagem Logo Javascript',
+  },
+  {
+    id: 5,
+    title: 'Typescript',
+    icon: '/icons/typescript-original.svg',
+    alt: 'Imagem Logo Typescript',
+  },
+  {
+    id: 6,
+    title: 'React.Js',
+    icon: '/icons/react-original.svg',
+    alt: 'Imagem Logo React',
+  },
+  {
+    id: 7,
+    title: 'Next.Js',
+    icon: '/icons/nextjs-icon.svg',
+    alt: 'Imagem Logo Next.Js',
+  },
+  {
+    id: 8,
+    title: 'Node.Js',
+    icon: '/icons/nodejs-original.svg',
+    alt: 'Imagem Logo Node.Js',
+  },
+  {
+    id: 9,
+    title: 'NestJs',
+    icon: '/icons/nestjs-icon.svg',
+    alt: 'Imagem Logo NestJs',
+  },
+  {
+    id: 10,
+    title: 'Git',
+    icon: '/icons/git-original.svg',
+    alt: 'Imagem Logo Git',
+  },
+  {
+    id: 11,
+    title: 'Github',
+    icon: '/icons/github-original.svg',
+    alt: 'Imagem Logo Github',
+  },
+  {
+    id: 12,
+    title: 'MySQL',
+    icon: '/icons/mysql-original.svg',
+    alt: 'Imagem Logo MySQL',
+  },
+  {
+    id: 13,
+    title: 'PostgreSQL',
+    icon: '/icons/postgresql-icon.svg',
+    alt: 'Imagem Logo PostgreSQL',
+  },
+  {
+    id: 14,
+    title: 'Docker',
+    icon: '/icons/docker-original.svg',
+    alt: 'Imagem Logo Docker',
+  },
+  {
+    id: 15,
+    title: 'Jest',
+    icon: '/icons/jest-plain.svg',
+    alt: 'Imagem Logo Jest',
+  },
+];
