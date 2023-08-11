@@ -23,6 +23,7 @@ export interface ProjectDataProps {
   imageProject: ImageProject;
   title: string;
   urlProject: string;
+  description: string;
 }
 
 export interface PorpsProject {

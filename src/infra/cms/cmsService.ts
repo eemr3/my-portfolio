@@ -7,6 +7,7 @@ const query = `
       id
       title
       urlProject
+      description
       imageProject{
         id
         url

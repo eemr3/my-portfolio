@@ -1,9 +1,16 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import { PorpsProject } from '../../helpers/interfaces';
+// import Pagination from '../Pagination/Pagination';
+import { useState } from 'react';
 import { Pagination } from '../Pagination';
 
+const itemsPerPage = 6;
+
 export default function Projects({ data }: PorpsProject) {
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const handlePageChange = (newPage) => {
+    setCurrentPage(newPage);
+  };
   return (
     <section className="min-h-screen pb-24 bg-zinc-900 w-full" id="project">
       <div className="flex flex-col justify-center items-center">
@@ -11,29 +18,16 @@ export default function Projects({ data }: PorpsProject) {
           <h2 className="text-5xl text-gray-50 mb-4">MEUS PROJETOS</h2>
           <span className="text-gray-50 text-sm">ESTA É A MINHA HISTÓRIA</span>
         </div>
-        <div className="border-b-2 border-gray-50 w-52 my-4"></div>
+        <div className="border-b-2 border-gray-50 w-52 my-4" />
       </div>
       <div>
-        <Pagination items={data} />
+        <Pagination
+          items={data}
+          itemsPerPage={itemsPerPage}
+          currentPage={currentPage}
+          onPageChange={handlePageChange}
+        />
       </div>
-      {/* {data.map((item) => (
-          <div key={item.id} className="h-72 max-w-md m-auto">
-            <Image
-              src={item.imageProject.url}
-              alt=""
-              className="object-cover h-72"
-              width={390}
-              height={0}
-            />
-            <Link href={item.urlProject} target="_blank">
-              <p className="text-gray-900 text-xl text-center bg-gray-50 py-3 px-2 w-[390px] lg:w-auto">
-                <span className="text-orange-400">&lt;</span>
-                {item.title}
-                <span className="text-orange-400">&#47;&gt;</span>
-              </p>
-            </Link>
-          </div>
-        ))} */}
     </section>
   );
 }
