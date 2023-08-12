@@ -6,7 +6,8 @@ const query = `
     allProjectCards{
       id
       title
-      urlProject
+      urlGithub
+      urlDeploy
       description
       imageProject{
         id

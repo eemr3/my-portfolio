@@ -1,12 +1,17 @@
 import Link from 'next/link';
-import React from 'react';
 
 interface ActionLinkProps {
-  urlProject: string;
+  urlGithub: string;
+  urlDeploy: string;
   title: string;
   description?: string;
 }
-export default function ActionLink({ urlProject, title, description }: ActionLinkProps) {
+export default function ActionLink({
+  urlDeploy,
+  urlGithub,
+  title,
+  description,
+}: ActionLinkProps) {
   return (
     <div className="flex h-full w-full space-x-4">
       <div>
@@ -15,16 +20,23 @@ export default function ActionLink({ urlProject, title, description }: ActionLin
         <p className="mt-1 text-sm font-normal text-gray-700 dark:text-gray-400">
           {description}
         </p>
-        <footer className="py-3 px-2 w-[390px] lg:w-auto flex justify-around">
-          <Link href={urlProject} target="_blank">
-            <p className="text-gray-800 dark:text-gray-100 text-base">
-              <span className="text-green-500 font-bold dark:font-normal dark:text-orange-400">
-                &lt;
-              </span>
-              Acessar
-              <span className="text-green-500 font-bold dark:text-orange-400 dark:font-normal">
-                &#47;&gt;
-              </span>
+        <footer className="py-3 px-2 w-[390px] lg:w-auto flex items-center justify-center gap-x-4">
+          <Link
+            href={urlGithub ? urlGithub : '#project'}
+            target={urlGithub ? '_blank' : ''}
+            className={urlGithub ? 'cursor-pointer' : 'cursor-not-allowed'}
+          >
+            <p className="text-gray-800 dark:text-gray-100 text-2xl">
+              <i className="devicon-github-original"></i>
+            </p>
+          </Link>
+          <Link
+            href={urlDeploy ? urlDeploy : '#project'}
+            target={urlDeploy ? '_blank ' : ''}
+            className={urlDeploy ? 'cursor-pointer' : 'cursor-not-allowed'}
+          >
+            <p className="text-gray-800 dark:text-gray-100 text-2xl">
+              <i className="devicon-chrome-plain"></i>
             </p>
           </Link>
         </footer>
