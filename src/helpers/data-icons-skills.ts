@@ -1,0 +1,92 @@
+export const dataIconsSkills = [
+  {
+    id: 1,
+    title: 'HTML',
+    icon: 'devicon-html5-plain',
+    levl: 95,
+  },
+  {
+    id: 2,
+    title: 'CSS',
+    icon: 'devicon-css3-plain',
+    level: 95,
+  },
+  {
+    id: 3,
+    title: 'Tailwindcss',
+    icon: 'devicon-tailwindcss-plain',
+    level: 95,
+  },
+  {
+    id: 4,
+    title: 'Javascript',
+    icon: 'devicon-javascript-plain',
+    level: 95,
+  },
+  {
+    id: 5,
+    title: 'Typescript',
+    icon: 'devicon-typescript-plain',
+    level: 95,
+  },
+  {
+    id: 6,
+    title: 'React.Js',
+    icon: 'devicon-react-original',
+    level: 95,
+  },
+  {
+    id: 7,
+    title: 'Next.Js',
+    icon: 'devicon-nextjs-original',
+    level: 95,
+  },
+  {
+    id: 8,
+    title: 'Node.Js',
+    icon: 'devicon-nodejs-plain',
+    level: 95,
+  },
+  {
+    id: 9,
+    title: 'NestJs',
+    icon: 'devicon-nestjs-plain',
+    level: 95,
+  },
+  {
+    id: 10,
+    title: 'Git',
+    icon: 'devicon-git-plain',
+    level: 95,
+  },
+  {
+    id: 11,
+    title: 'Github',
+    icon: 'devicon-github-original',
+    level: 95,
+  },
+  {
+    id: 12,
+    title: 'MySQL',
+    icon: 'devicon-mysql-plain',
+    level: 95,
+  },
+  {
+    id: 13,
+    title: 'PostgreSQL',
+    icon: 'devicon-postgresql-plain',
+    level: 95,
+  },
+  {
+    id: 14,
+    title: 'Docker',
+    icon: 'devicon-docker-plain',
+    level: 95,
+  },
+  {
+    id: 15,
+    title: 'Jest',
+    icon: 'devicon-jest-plain',
+    level: 95,
+  },
+];
