@@ -21,7 +21,7 @@ export default function NavBar() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <h1 className="text-gray-100 text-2xl font-semibold italic">
+                <h1 className="text-[#fff] text-2xl font-semibold italic">
                   <span className="font-bold text-red-500">|</span> EEMR3{' '}
                   <span className="font-bold text-red-500">|</span>
                 </h1>
@@ -33,7 +33,7 @@ export default function NavBar() {
                       key={item.name}
                       href={item.href}
                       className="hover:bg-[#7F7F7F] transition duration-500 ease-in-out
-                       text-white block px-3 py-4 
+                       text-[#fff] block px-3 py-4 
                       rounded-md text-base font-semibold"
                     >
                       {item.name}
@@ -46,7 +46,7 @@ export default function NavBar() {
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-[#fff] hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-[#fff]"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
@@ -105,7 +105,7 @@ export default function NavBar() {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
+                    className="hover:bg-gray-700 text-[#fff] block px-3 py-2 rounded-md text-base font-medium"
                   >
                     {item.name}
                   </a>

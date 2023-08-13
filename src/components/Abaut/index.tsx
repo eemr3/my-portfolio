@@ -9,12 +9,12 @@ export default function Abaut() {
       <div className="container mx-auto flex flex-col">
         <div className="flex flex-col justify-center items-center">
           <div className="pt-10 pb-6 lg:pt-24 lg:pb-0 text-center">
-            <h1 className="text-3xl sm:text-4xl md:text-4xl text-gray-100">SOBRE MIM</h1>
-            <h2 className="text-sm sm:text-gray-100 mt-2 sm:mt-3">
+            <h1 className="text-3xl sm:text-4xl md:text-4xl text-[#fff]">SOBRE MIM</h1>
+            <h2 className="text-sm sm:text-[#fff] mt-2 sm:mt-3">
               ESPERO TE CONHECER DEPOIS
             </h2>
           </div>
-          <div className="border-b-2 border-gray-100 w-40 sm:w-52 my-4" />
+          <div className="border-b-2 border-[#fff] w-40 sm:w-52 my-4" />
           <div className="mb-6">
             <Image
               className="rounded-full"
@@ -33,26 +33,32 @@ export default function Abaut() {
           <Me />
 
           <div>
-            <h2 className="font-bold mb-4 text-gray-100">EMERSON MOREIRA</h2>
-            <p className="mb-3 text-gray-100">
-              <span className="font-bold text-gray-100">E-mail: </span>
+            <h2 className="font-bold mb-4 text-[#fff]">EMERSON MOREIRA</h2>
+            <p className="mb-3 text-[#fff]">
+              <span className="font-bold text-[#fff]">E-mail: </span>
               eemr3@yahoo.com.br
             </p>
-            <p className="mb-3 text-gray-100">
-              <span className="font-bold text-gray-100">Cidade:</span> Anápolis - GO
+            <p className="mb-3 text-[#fff]">
+              <span className="font-bold text-[#fff]">Cidade:</span> Anápolis - GO
             </p>
-            <ul className="flex items-center text-gray-100">
+            <ul className="flex items-center text-[#fff]">
               <li className="text-3xl mr-3">
                 <Link
                   href="https://www.linkedin.com/in/emerson-moreira/"
                   target="_blank"
                   rel="noreferrer"
+                  aria-label="Linkedin"
                 >
                   <FaLinkedinIn />
                 </Link>
               </li>
               <li className="text-3xl mr-3">
-                <Link href="https://github.com/eemr3" target="_blank" rel="noreferrer">
+                <Link
+                  href="https://github.com/eemr3"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Github"
+                >
                   <FaGithub />
                 </Link>
               </li>
@@ -61,6 +67,7 @@ export default function Abaut() {
                   href="https://app.rocketseat.com.br/me/emerson-moreira-1566533806"
                   target="_blank"
                   rel="noreferrer"
+                  aria-label="Rocketseat"
                 >
                   <FaRocket />
                 </Link>

@@ -15,7 +15,7 @@ export default function ActionLink({
   return (
     <div className="flex h-full w-full space-x-4">
       <div>
-        <h3 className="text-sm font-medium text-gray-900 dark:text-gray-100">{title}</h3>
+        <h3 className="text-sm font-medium text-gray-900 dark:text-[#fff]0">{title}</h3>
 
         <p className="mt-1 text-sm font-normal text-gray-700 dark:text-gray-400">
           {description}
@@ -26,7 +26,7 @@ export default function ActionLink({
             target={urlGithub ? '_blank' : ''}
             className={urlGithub ? 'cursor-pointer' : 'cursor-not-allowed'}
           >
-            <p className="text-gray-800 dark:text-gray-100 text-2xl">
+            <p className="text-gray-800 dark:text-[#fff]0 text-2xl">
               <i className="devicon-github-original"></i>
             </p>
           </Link>
@@ -35,7 +35,7 @@ export default function ActionLink({
             target={urlDeploy ? '_blank ' : ''}
             className={urlDeploy ? 'cursor-pointer' : 'cursor-not-allowed'}
           >
-            <p className="text-gray-800 dark:text-gray-100 text-2xl">
+            <p className="text-gray-800 dark:text-[#fff]0 text-2xl">
               <i className="devicon-chrome-plain"></i>
             </p>
           </Link>

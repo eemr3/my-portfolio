@@ -5,8 +5,8 @@ export default function Skills() {
     <section className="bg-[#1F1F1F] py-10 md:py-20" id="skills">
       <div className="container mx-auto flex flex-col justify-center items-center">
         <div className="text-center">
-          <h2 className="text-2xl md:text-4xl text-gray-100 mb-2">HABILIDADES</h2>
-          <p className="text-xs md:text-sm text-gray-100 mt-2 md:mt-3">
+          <h2 className="text-2xl md:text-4xl text-[#fff] mb-2">HABILIDADES</h2>
+          <p className="text-xs md:text-sm text-[#fff] mt-2 md:mt-3">
             AQUI ESTÁ MEU ARMAMENTO
           </p>
         </div>
@@ -20,7 +20,7 @@ export default function Skills() {
           <div
             key={icon.id}
             className="flex flex-col justify-center
-               items-center text-gray-100 w-[100px] 
+               items-center text-[#fff] w-[100px] 
                h-[85px] bg-[#2A2929] rounded-md p-2 gap-y-1"
           >
             <i className={icon.icon} style={{ fontSize: '220%' }}></i>

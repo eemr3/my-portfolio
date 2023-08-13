@@ -5,17 +5,22 @@ export default function Footer() {
   return (
     <footer className="footer bg-[#494949] relative pt-1">
       <div className="container mx-auto px-6 flex flex-col items-center py-7">
-        <ul className="flex items-center text-gray-100">
+        <ul className="flex items-center text-[#fff]">
           {dataIconsSocial.map((icon) => (
             <li key={icon.id} className="text-2xl mr-3">
-              <Link href={icon.url} target="_black" rel="noreferrer">
+              <Link
+                href={icon.url}
+                target="_black"
+                rel="noreferrer"
+                aria-label={icon.arialLabel}
+              >
                 <i className={icon.icon}></i>
               </Link>
             </li>
           ))}
         </ul>
         <div className="sm:w-2/3 text-center">
-          <p className="text-sm text-gray-100 font-normal mt-2">
+          <p className="text-sm text-[#fff] font-normal mt-2">
             © {new Date().getFullYear()} by Emerson Moreira
           </p>
         </div>

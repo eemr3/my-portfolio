@@ -34,16 +34,17 @@ export function Pagination({ items, itemsPerPage, currentPage, onPageChange }) {
             <div className="mt-4 flex justify-between items-center sm:w-[1280px] mx-auto">
               <div>
                 <button
-                  className="px-4 py-2 w-[100px] cursor-pointer text-gray-100 hover:text-gray-300"
+                  className="px-4 py-2 w-[100px] cursor-pointer text-[#fff] hover:text-gray-300"
                   onClick={() => onPageChange(currentPage - 1)}
                   disabled={currentPage === 1}
+                  aria-label="Página anterior"
                 >
                   <FaArrowLeft className="text-2xl" />
                 </button>
               </div>
 
               <div>
-                <p className="text-sm text-gray-100 font-semibold">
+                <p className="text-sm text-[#fff] font-semibold">
                   <span className="font-medium">{currentPage}</span> of{' '}
                   <span className="font-medium">{pages}</span> results
                 </p>
@@ -51,9 +52,10 @@ export function Pagination({ items, itemsPerPage, currentPage, onPageChange }) {
               <div>
                 <button
                   className="lg:flex lg:justify-end px-4 py-2 w-[100px] cursor-pointer 
-                    text-gray-100 hover:text-gray-300"
+                    text-[#fff] hover:text-gray-300"
                   onClick={() => onPageChange(currentPage + 1)}
                   disabled={currentPage === pages}
+                  aria-label="Próxima página"
                 >
                   <FaArrowRight className="text-2xl" />
                 </button>

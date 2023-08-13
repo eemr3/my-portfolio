@@ -11,6 +11,10 @@ const nextConfig = {
       'www.datocms-assets.com',
     ],
   },
+  i18n: {
+    locales: ['pt-br', 'en-us'],
+    defaultLocale: 'pt-br',
+  },
 };
 
 module.exports = nextConfig;

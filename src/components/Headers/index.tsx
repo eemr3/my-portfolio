@@ -9,14 +9,14 @@ export default function Header() {
         <Image src="/image-header.svg" alt="" width={100} height={100} />
         <h1
           className="
-        text-gray-100 text-2xl
+        text-[#fff] text-2xl
         lg:text-4xl 2xl:text-5xl my-5"
         >
           Emerson Moreira
         </h1>
-        <div className="border-b-2 border-white w-full my-3" />
+        <div className="border-b-2 border-[#fff] w-full my-3" />
         <TypeAnimation
-          className="text-sm lg:text-3xl 2xl:text-4xl mt-3 text-gray-100"
+          className="text-sm lg:text-3xl 2xl:text-4xl mt-3 text-[#fff]"
           sequence={[
             // Same substring at the start will only be typed out once, initially
             'Desenvolvedor Web Full Stack',

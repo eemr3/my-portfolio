@@ -57,7 +57,7 @@ export default function Me() {
           </svg>
         </div>
         <div className="w-[85%] pr-10">
-          <p className="text-gray-100 text-center font-semibold ">Quem eu sou!</p>
+          <p className="text-[#fff] text-center font-semibold ">Quem eu sou!</p>
         </div>
       </div>
       <div
@@ -68,7 +68,7 @@ export default function Me() {
           lineHeight: '200%',
         }}
       >
-        <p className="text-base text-justify text-gray-100">
+        <p className="text-base text-justify text-[#fff]">
           Desenvolvedor Web Full Stack Jr, sou apaixonado por tecnologia, principalmente
           área de desenvolvimento, estou sempre disposto a encarar novos desafios e
           aprender novas tecnologias, e culturas que engajam e impactam na vida de outras
