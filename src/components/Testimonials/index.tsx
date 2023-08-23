@@ -9,7 +9,7 @@ export default function Testimonials() {
       name: 'Dárcio Nuno Carvalho',
       ocupation: 'Desenvolvedor Front-end',
       text: `Emerson é um ótimo profissional, dedicado, pró-ativo e trabalha em prol da equipe com o objetivo de alcançar a melhor entrega no projeto. Está sempre a disposição para ajudar os seus liderados dando o suporte necessário para concluir as tarefas. 
-      Uma excelente pessoal com o qual tenho o prazer de trabalhar no projeto Findy.`,
+      Uma excelente pessoa com o qual tenho o prazer de trabalhar no projeto Findy.`,
       image: 'https://avatars.githubusercontent.com/u/48179708?v=4',
       github: 'Github',
       githubUrl: 'https://github.com/DarcioCarvalho',
