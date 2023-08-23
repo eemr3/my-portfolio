@@ -1,3 +1,4 @@
+import { ThemeProvider } from 'next-themes';
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
@@ -13,10 +14,12 @@ export default function App({
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-        ></link>
+        />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <Component {...pageProps} />
+      <ThemeProvider attribute="class" enableSystem={false}>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   );
 }

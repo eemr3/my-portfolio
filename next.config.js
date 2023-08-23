@@ -9,6 +9,9 @@ const nextConfig = {
       'i.ibb.co',
       'user-images.githubusercontent.com',
       'www.datocms-assets.com',
+      'avatars.githubusercontent.com',
+      'cdn.discordapp.com',
+      'drive.google.com',
     ],
   },
   i18n: {
