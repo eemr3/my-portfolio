@@ -25,7 +25,7 @@ export function Pagination({ items, itemsPerPage, currentPage, onPageChange }) {
           </Card.Root>
         ))}
       </div>
-      <div className="flex items-center justify-between bg-[#494949] px-4 py-3 sm:px-6 mt-12">
+      <div className="flex items-center justify-between bg-[#efe1bd] dark:bg-[#494949] px-4 py-3 sm:px-6 mt-12">
         <div className="w-full relative">
           <nav
             className="w-full absolute bottom-0 px-4 sm:px-10 isolate inline-flex 
@@ -34,7 +34,8 @@ export function Pagination({ items, itemsPerPage, currentPage, onPageChange }) {
             <div className="mt-4 flex justify-between items-center sm:w-[1280px] mx-auto">
               <div>
                 <button
-                  className="px-4 py-2 w-[100px] cursor-pointer text-[#fff] hover:text-gray-300"
+                  className="lg:flex lg:justify-end px-4 py-2 w-[100px] cursor-pointer 
+                   text-gray-900 hover:text-gray-700 dark:text-white dark:hover:text-gray-300"
                   onClick={() => onPageChange(currentPage - 1)}
                   disabled={currentPage === 1}
                   aria-label="Página anterior"
@@ -44,15 +45,15 @@ export function Pagination({ items, itemsPerPage, currentPage, onPageChange }) {
               </div>
 
               <div>
-                <p className="text-sm text-[#fff] font-semibold">
-                  <span className="font-medium">{currentPage}</span> of{' '}
-                  <span className="font-medium">{pages}</span> results
+                <p className="text-sm text-gray-900 dark:text-white font-semibold">
+                  <span className="font-medium">{currentPage}</span> de{' '}
+                  <span className="font-medium">{pages}</span>
                 </p>
               </div>
               <div>
                 <button
                   className="lg:flex lg:justify-end px-4 py-2 w-[100px] cursor-pointer 
-                    text-[#fff] hover:text-gray-300"
+                    text-gray-900 hover:text-gray-700 dark:text-white dark:hover:text-gray-300"
                   onClick={() => onPageChange(currentPage + 1)}
                   disabled={currentPage === pages}
                   aria-label="Próxima página"

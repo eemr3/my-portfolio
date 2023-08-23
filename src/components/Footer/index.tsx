@@ -3,7 +3,7 @@ import { dataIconsSocial } from '../../helpers/data-icons-social';
 
 export default function Footer() {
   return (
-    <footer className="footer bg-[#494949] relative pt-1">
+    <footer className="footer bg-[#1F1F1F] relative pt-1">
       <div className="container mx-auto px-6 flex flex-col items-center py-7">
         <ul className="flex items-center text-[#fff]">
           {dataIconsSocial.map((icon) => (
