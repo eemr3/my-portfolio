@@ -55,7 +55,7 @@ export default function Header() {
             1000, // wait 1s before replacing "Mice" with "Hamsters"
             '',
             500,
-            'Desenvolvedor Font-End',
+            'Desenvolvedor Front-End',
             1000,
             '',
             500,
