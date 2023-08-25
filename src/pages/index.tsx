@@ -8,14 +8,14 @@ import Testimonials from '../components/Testimonials';
 import TestimonialCard from '../components/Testimonials/TestimonialCard';
 import { cmsService } from '../infra/cms/cmsService';
 
-export default function Home({ content, testimonials }: any) {
+export default function Home({ content, testimonials, skills }: any) {
   return (
     <>
       <NavBar />
       <Header />
       <Abaut />
       <Projects data={content} />
-      <Skills />
+      <Skills dataSkills={skills} />
       <Testimonials testimonials={testimonials} />
       <Footer />
     </>
@@ -29,6 +29,7 @@ export async function getStaticProps() {
     props: {
       content: data.allProjectCards,
       testimonials: data.allTestimonials,
+      skills: data.allSkils,
     },
     revalidate: 10, //segundos
   };

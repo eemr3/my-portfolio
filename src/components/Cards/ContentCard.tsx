@@ -7,9 +7,9 @@ interface ContentCardProps {
 }
 export function ContentCard({ title, image }: ContentCardProps) {
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+    <div className="bg-white dark:bg-[#6d6d6d] rounded-lg overflow-hidden">
       <Image
-        className="w-full h-auto"
+        className="w-full h-auto lg:h-48"
         src={image}
         width={400}
         height={250}

@@ -105,7 +105,7 @@ const DialogProjects = ({
             alt={`Imagem do projeto ${title}`}
             width={600}
             height={100}
-            className="h-[260px] lg:w-auto"
+            className="h-[260px] lg:w-full lg:mx-auto"
           />
         </figure>
       </section>
