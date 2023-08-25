@@ -31,7 +31,7 @@ export const dataIconsSkills = [
   },
   {
     id: 6,
-    title: 'React.Js',
+    title: 'React',
     icon: 'devicon-react-original',
     level: 95,
   },
@@ -43,7 +43,7 @@ export const dataIconsSkills = [
   },
   {
     id: 8,
-    title: 'Node.Js',
+    title: 'Node.js',
     icon: 'devicon-nodejs-plain',
     level: 95,
   },
