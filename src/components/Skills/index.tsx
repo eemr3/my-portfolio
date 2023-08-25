@@ -1,6 +1,6 @@
 import { dataIconsSkills } from '../../helpers/data-icons-skills';
 
-export default function Skills() {
+export default function Skills({ dataSkills }) {
   return (
     <section className="bg-[#1F1F1F] py-10 md:py-20" id="skills">
       <div className="container mx-auto flex flex-col justify-center items-center">
@@ -16,7 +16,7 @@ export default function Skills() {
         className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 
         gap-4 md:gap-6 mt-6 md:mt-9 max-w-4xl mx-auto items-center"
       >
-        {dataIconsSkills.map((icon) => (
+        {dataSkills.map((icon) => (
           <div
             key={icon.id}
             className="flex flex-col justify-center

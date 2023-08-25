@@ -11,17 +11,29 @@ export function Pagination({ items, itemsPerPage, currentPage, onPageChange }) {
     <div className="m-auto">
       <div
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-7 gap-y-20 
-        gap-x-8 sm:w-[90%] xl:w-8/12 m-auto z-30 relative"
+        gap-x-8 sm:w-[90%] xl:w-8/12 m-auto "
       >
         {/* <HoverCardDemo /> */}
         {visibleItems.map((item: any) => (
-          <Card.Root key={item.id} imageUrl={item.imageProject.url}>
-            <Card.Action
-              urlGithub={item.urlGithub}
-              urlDeploy={item.urlDeploy}
-              title={item.title}
-              description={item.description}
-            />
+          <Card.Root
+            key={item.id}
+            urlGithub={item.urlGithub}
+            urlDeploy={item.urlDeploy}
+            description={item.description}
+            title={item.title}
+            image={item.imageProject.url}
+            titleicon01={item.titleicon01}
+            icon01={item.icon01}
+            titleicon02={item.titleicon02}
+            icon02={item.icon02}
+            titleicon03={item.titleicon03}
+            icon03={item.icon03}
+            titleicon04={item.titleicon04}
+            icon04={item.icon04}
+            titleicon05={item.titleicon05}
+            icon05={item.icon05}
+          >
+            <Card.Content image={item.imageProject.url} title={item.title} />
           </Card.Root>
         ))}
       </div>
