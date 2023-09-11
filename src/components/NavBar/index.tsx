@@ -1,6 +1,7 @@
 import { Transition } from '@headlessui/react';
 import { useState } from 'react';
-
+import Logo from '../../../public/EEMR3.svg';
+import Image from 'next/image';
 const navigation = [
   { name: 'Início', href: '#', current: true },
   { name: 'Sobre', href: '#about', current: false },
@@ -22,10 +23,11 @@ export default function NavBar() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <h1 className="text-[#fff] text-2xl font-semibold italic">
+                <Image src={Logo} alt="Logo" width={105} height={105} />
+                {/* <h1 className="text-[#fff] text-2xl font-semibold italic">
                   <span className="font-bold text-red-500">|</span> EEMR3{' '}
                   <span className="font-bold text-red-500">|</span>
-                </h1>
+                </h1> */}
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
