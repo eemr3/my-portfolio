@@ -20,10 +20,10 @@ export default function Abaut() {
           <div className="mb-6">
             <Image
               className="rounded-full"
-              src="/eemr3.jpeg"
+              src="/eemr3-02.jpg"
               alt="Foto perfil Emerson"
-              width={180}
-              height={180}
+              width={187}
+              height={187}
             />
           </div>
         </div>

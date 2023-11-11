@@ -89,10 +89,10 @@ export const dataIconsSkills = [
     icon: 'devicon-docker-plain',
     level: 95,
   },
-  {
-    id: 16,
-    title: 'Jest',
-    icon: 'devicon-jest-plain',
-    level: 95,
-  },
+  // {
+  //   id: 16,
+  //   title: 'Jest',
+  //   icon: 'devicon-jest-plain',
+  //   level: 95,
+  // },
 ];
